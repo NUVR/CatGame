@@ -17,8 +17,10 @@ public class jumpScript : MonoBehaviour
 
     private void Jumping(InputAction.CallbackContext obj)
     {
+        Debug.Log("pressed");
         if (!characterController.isGrounded)
         {
+
             return;
         }
         playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
@@ -32,6 +34,7 @@ public class jumpScript : MonoBehaviour
         if(characterController.isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = 0;
+            
         }
         playerVelocity.y -= gravityValue * Time.deltaTime;
         characterController.Move(playerVelocity * Time.deltaTime);
