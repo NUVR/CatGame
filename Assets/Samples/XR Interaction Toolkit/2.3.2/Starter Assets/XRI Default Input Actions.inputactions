@@ -860,6 +860,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "jump2",
+                    "type": "Button",
+                    "id": "7114569e-2866-4be8-8b87-75cbf65c7cde",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -959,6 +968,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "305259f5-cc60-4456-9a90-7e757b1acb30",
+                    "path": "<ViveController>/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "jump2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
