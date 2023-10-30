@@ -4,50 +4,92 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class TriggerEvent : UnityEvent<float> { }
 
 namespace UnityEngine.XR.Interaction.Toolkit
 {
     public class ExtendClaws : XRBaseController
     {
 
-        [SerializeField]
-        [Tooltip("The Input System Action that will be used to perform grab movement while held. Must be a Button Control.")]
-        InputActionProperty m_ExtendClawsAction;
-        /// <summary>
-        /// The Input System Action that Unity uses to perform grab movement while held. Must be a <see cref="ButtonControl"/> Control.
-        /// </summary>
-        public InputActionProperty extendClawsAction
+        public TriggerEvent triggerPress;
+
+        private float lastTriggerState = 0.0f;
+        private List<InputDevice> devicesWithTrigger;
+
+        private void Awake()
         {
-            get => m_ExtendClawsAction;
-            set => SetInputActionProperty(ref m_ExtendClawsAction, value);
+            if (triggerPress == null)
+            {
+                triggerPress = new TriggerEvent();
+            }
+
+            devicesWithTrigger = new List<InputDevice>();
         }
 
-
-
-        // Start is called before the first frame update
-        void Start()
+        void OnEnable()
         {
+            List<InputDevice> allDevices = new List<InputDevice>();
+            InputDevices.GetDevices(allDevices);
+            foreach (InputDevice device in allDevices)
+                InputDevices_deviceConnected(device);
 
+            InputDevices.deviceConnected += InputDevices_deviceConnected;
+            InputDevices.deviceDisconnected += InputDevices_deviceDisconnected;
+            
         }
 
-        // Update is called once per frame
+        private void OnDisable()
+        {
+            InputDevices.deviceConnected -= InputDevices_deviceConnected;
+            InputDevices.deviceDisconnected -= InputDevices_deviceDisconnected;
+            devicesWithTrigger.Clear();
+        }
+
+        private void InputDevices_deviceConnected(InputDevice device)
+        {
+            float discardedValue;
+            if (device.TryGetFeatureValue(CommonUsages.trigger, out discardedValue))
+            {
+                Debug.Log(device.name);
+                devicesWithTrigger.Add(device); // Add any devices that have a primary button.
+            }
+            
+        }
+
+        private void InputDevices_deviceDisconnected(InputDevice device)
+        {
+            if (devicesWithTrigger.Contains(device))
+                devicesWithTrigger.Remove(device);
+        }
+
         void Update()
         {
-            if (m_ExtendClawsAction.action.isPressed())
+            float tempState = 0.0f;
+            foreach (var device in devicesWithTrigger)
             {
-                Console.Log("Trigger is pressed");
+                float triggerState = 0.0f;
+                if (device.TryGetFeatureValue(CommonUsages.trigger, out triggerState))
+                {
+                    Debug.Log(triggerState);
+                    if (triggerState > tempState)
+                    {
+                        tempState = triggerState;
+                        
+                    }
+                }
             }
+
+            if (tempState != lastTriggerState) // Button state changed since last frame
+            {
+                triggerPress.Invoke(tempState);
+                lastTriggerState = tempState;
+            }
+
+            
         }
 
-        void SetInputActionProperty(ref InputActionProperty property, InputActionProperty value)
-        {
-            if (Application.isPlaying)
-                property.DisableDirectAction();
-
-            property = value;
-
-            if (Application.isPlaying && isActiveAndEnabled)
-                property.EnableDirectAction();
-        }
     }
 }

@@ -2152,10 +2152,10 @@
                 {
                     "name": "",
                     "id": "39ea7a19-3baa-4f6c-bdd0-686ef889c515",
-                    "path": "<XRController>{LeftHand}/triggerButton",
+                    "path": "<ViveController>/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Extend Claws L",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -2163,7 +2163,7 @@
                 {
                     "name": "",
                     "id": "2ae3f000-7553-41fb-af26-39ede3c40936",
-                    "path": "<XRController>{RightHand}/triggerButton",
+                    "path": "<ViveController>/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
