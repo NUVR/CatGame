@@ -9197,18 +9197,9 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
-  m_ExtendClawsAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Extend Claws
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 1ae9ff08-5427-415a-92bd-8bc4135eb093
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -4530883627988743102, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  triggerPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &196977305468683332
 GameObject:
   m_ObjectHideFlags: 0
@@ -9827,6 +9818,63 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &3272136804127049740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585507546241535466, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793146103433015502, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
+      propertyPath: m_Name
+      value: Health Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94e62aac238c8646a9477f6498fe803, type: 3}
 --- !u!114 &3807310294900035020
 MonoBehaviour:
   m_ObjectHideFlags: 0
