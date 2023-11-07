@@ -36,7 +36,7 @@ public class jumpScript : MonoBehaviour
             playerVelocity.y = 0;
             
         }
-        playerVelocity.y -= gravityValue * Time.deltaTime;
-        characterController.Move(playerVelocity * Time.deltaTime);
+        playerVelocity.y -= gravityValue;
+        PlayerMovement.AddMovement(playerVelocity * Time.deltaTime);
     }
 }

@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwingingArmMotion : MonoBehaviour
+public class armswingYT : MonoBehaviour
 {
     // Game Objects
     [SerializeField] private GameObject LeftHand;
@@ -36,7 +35,6 @@ public class SwingingArmMotion : MonoBehaviour
         // get forward direction from the center eye camera and set it to the forward direction object
         float yRotation = MainCamera.transform.eulerAngles.y;
         ForwardDirection.transform.eulerAngles = new Vector3(0, yRotation, 0);
-        Vector3 myForward = ForwardDirection.transform.forward;
 
         // get positons of hands
         PositionCurrentFrameLeftHand = LeftHand.transform.position;
@@ -46,16 +44,16 @@ public class SwingingArmMotion : MonoBehaviour
         PlayerPositionCurrentFrame = transform.position;
 
         // get distance the hands and player has moved from last frame
-        var playerDistanceMoved = Vector3.Dot(myForward, PlayerPositionCurrentFrame - PlayerPositionPreviousFrame);
-        var leftHandDistanceMoved = Vector3.Dot(myForward, PositionPreviousFrameLeftHand - PositionCurrentFrameLeftHand);
-        var rightHandDistanceMoved = Vector3.Dot(myForward, PositionPreviousFrameRightHand - PositionCurrentFrameRightHand);
-        
+        var playerDistanceMoved = Vector3.Distance(PlayerPositionCurrentFrame, PlayerPositionPreviousFrame);
+        var leftHandDistanceMoved = Vector3.Distance(PositionPreviousFrameLeftHand, PositionCurrentFrameLeftHand);
+        var rightHandDistanceMoved = Vector3.Distance(PositionPreviousFrameRightHand, PositionCurrentFrameRightHand);
+
         // aggregate to get hand speed
-        HandSpeed = ((Math.Abs(leftHandDistanceMoved) - Math.Abs(playerDistanceMoved)) + (Math.Abs(rightHandDistanceMoved) - Math.Abs(playerDistanceMoved)));
+        HandSpeed = ((leftHandDistanceMoved - playerDistanceMoved) + (rightHandDistanceMoved - playerDistanceMoved));
 
         if (Time.timeSinceLevelLoad > 1f)
         {
-            PlayerMovement.AddMovement(ForwardDirection.transform.forward * HandSpeed * Speed * Time.deltaTime);
+            transform.position += ForwardDirection.transform.forward * HandSpeed * Speed * Time.deltaTime;
         }
 
         // set previous position of hands for next frame

@@ -7,8 +7,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Climber : MonoBehaviour
 {
     private CharacterController character;
-    public static XRController climbingHand;
+    public static Climber Instance;
+    public XRController climbingHand;
     private SwingingArmMotion continuousMovement;
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +40,6 @@ public class Climber : MonoBehaviour
     {
         InputDevices.GetDeviceAtXRNode(climbingHand.controllerNode).TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 velocity);
 
-        character.Move(transform.rotation * -velocity * Time.fixedDeltaTime);
+        PlayerMovement.AddMovement(transform.rotation * -velocity * Time.fixedDeltaTime);
     }
 }

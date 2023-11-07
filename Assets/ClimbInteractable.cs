@@ -10,7 +10,7 @@ public class ClimbInteractable : XRBaseInteractable
     {
         base.OnSelectEntered(interactor);
         if (interactor is XRDirectInteractor)
-            Climber.climbingHand = interactor.GetComponent<XRController>();
+            Climber.Instance.climbingHand = interactor.GetComponent<XRController>();
     }
 
 
@@ -20,9 +20,9 @@ public class ClimbInteractable : XRBaseInteractable
         base.OnSelectExited(interactor);
         if (interactor is XRDirectInteractor)
         {
-            if (Climber.climbingHand && Climber.climbingHand.name == interactor.name)
+            if (Climber.Instance.climbingHand && Climber.Instance.climbingHand.name == interactor.name)
             {
-                Climber.climbingHand = null;
+                Climber.Instance.climbingHand = null;
             }
         }
     }
