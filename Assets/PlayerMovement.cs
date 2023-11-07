@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
         instance.curVector += dir;
     }
 
+    void Awake(){
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
