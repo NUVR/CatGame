@@ -51,7 +51,7 @@ public class SwingingArmMotion : MonoBehaviour
         var rightHandDistanceMoved = Vector3.Dot(myForward, PositionPreviousFrameRightHand - PositionCurrentFrameRightHand);
         
         // aggregate to get hand speed
-        HandSpeed = ((Math.Abs(leftHandDistanceMoved) - Math.Abs(playerDistanceMoved)) + (Math.Abs(rightHandDistanceMoved) - Math.Abs(playerDistanceMoved)));
+        HandSpeed = Mathf.Abs(((Math.Abs(leftHandDistanceMoved) - Math.Abs(playerDistanceMoved)) + (Math.Abs(rightHandDistanceMoved) - Math.Abs(playerDistanceMoved))));
 
         if (Time.timeSinceLevelLoad > 1f)
         {

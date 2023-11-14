@@ -24,6 +24,7 @@ public class jumpScript : MonoBehaviour
             return;
         }
         playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
+        
     }
     private void Awake()
     {
@@ -34,9 +35,13 @@ public class jumpScript : MonoBehaviour
         if(characterController.isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = 0;
-            
+
         }
-        playerVelocity.y -= gravityValue;
+        else
+        {
+            playerVelocity.y -= gravityValue;
+        }
+
         PlayerMovement.AddMovement(playerVelocity * Time.deltaTime);
     }
 }

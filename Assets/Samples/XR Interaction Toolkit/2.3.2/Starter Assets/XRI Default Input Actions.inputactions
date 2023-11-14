@@ -955,7 +955,7 @@
                     "name": "",
                     "id": "49e4df71-884f-49b6-88cc-dcb4e2f01770",
                     "path": "<XRController>/triggerPressed",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Jump",
