@@ -9,6 +9,7 @@ public class Climber : MonoBehaviour
     public CharacterController character;
     public static ActionBasedController climbingHand;
     private SwingingArmMotion continuousMovement;
+    private jumpScript jump;
 
     private ActionBasedController previousHand;
     private Vector3 previousPos;
@@ -18,6 +19,7 @@ public class Climber : MonoBehaviour
     void Start()
     {
         continuousMovement = GetComponent<SwingingArmMotion>();
+        jump = GetComponent<jumpScript>();
     }
 
     void Update()
@@ -38,12 +40,15 @@ public class Climber : MonoBehaviour
                 //Debug.Log("DIFFERENT HAND NOW");
             }
             continuousMovement.enabled = false;
+            jump.enabled = false;
+
             Climb();
         }
         else
         {
             Debug.Log("not climbing hand");
             continuousMovement.enabled = true;
+            jump.enabled = true;
         }
     }
     void Climb()

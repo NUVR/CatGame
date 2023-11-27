@@ -10,8 +10,6 @@ public class ClimbInteractable : XRBaseInteractable
 
         if (args.interactorObject is XRDirectInteractor)
         {
-            Debug.Log("on select");
-            Debug.Log(args.interactorObject.transform.name);
             Climber.climbingHand = args.interactorObject.transform.parent.GetComponent<ActionBasedController>();
         }
 
