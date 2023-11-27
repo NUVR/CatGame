@@ -456,39 +456,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 0100000007000000040000000d0000000e000000
+  Keys: 01000000070000000d00000004000000
   Values:
   - {fileID: -4605303312908822709}
   - {fileID: -4119194328465603995}
-  - {fileID: 4074965309386498446}
-  - {fileID: -321425392252290923}
-  - {fileID: 135453286294034358}
---- !u!114 &135453286294034358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
-  m_Name: WSA
-  m_EditorClassIdentifier: 
-  features:
-  - {fileID: 729842869119965679}
-  - {fileID: 7353016698356291682}
-  - {fileID: -2471347602993585668}
-  - {fileID: -3236230032600394086}
-  - {fileID: -318602828840014700}
-  - {fileID: 7125054991880860347}
-  - {fileID: 1947848380246748652}
-  - {fileID: -1074640607877843439}
-  - {fileID: 5706069895107579312}
-  - {fileID: -4396494306201278227}
-  - {fileID: 7166301858604879188}
-  m_renderMode: 1
-  m_depthSubmissionMode: 0
+  - {fileID: 1500135520712083075}
+  - {fileID: 727099392653916895}
 --- !u!114 &204087157214211192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +502,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
---- !u!114 &729842869119965679
+--- !u!114 &727099392653916895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -538,17 +511,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486b5e28864f9a94b979b9620ce5006d, type: 3}
-  m_Name: ConformanceAutomationFeature WSA
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: iPhone
   m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: Conformance Automation
-  version: 0.0.1
-  featureIdInternal: com.unity.openxr.feature.conformance
-  openxrExtensionStrings: XR_EXT_conformance_automation
-  company: Unity
-  priority: 0
-  required: 0
+  features: []
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
+--- !u!114 &1500135520712083075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: 
+  features: []
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
 --- !u!114 &1674107087499092540
 MonoBehaviour:
   m_ObjectHideFlags: 0

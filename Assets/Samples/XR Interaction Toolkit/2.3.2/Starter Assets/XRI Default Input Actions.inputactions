@@ -2124,6 +2124,74 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "XRI General Interactions",
+            "id": "9f6f52a9-6edb-4eba-9523-2d5e4f395b4f",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "33d5e4d3-4e2e-4c54-9697-42e05d6f3491",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Extend Claws L",
+                    "type": "Button",
+                    "id": "5d13cc3e-6ca2-4878-8fc6-46ac297d6cc6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Extend Claws R",
+                    "type": "Button",
+                    "id": "ee673368-166b-4861-b52e-0b7cc9c8d39c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2de46530-795f-42d3-8da0-16c9291631c5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "39ea7a19-3baa-4f6c-bdd0-686ef889c515",
+                    "path": "<ViveController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Extend Claws L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ae3f000-7553-41fb-af26-39ede3c40936",
+                    "path": "<ViveController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Extend Claws R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
