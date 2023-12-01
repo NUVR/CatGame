@@ -3,129 +3,189 @@
   <TypeDate>
     <guid>12613d40a2186a543a4d03d079b902e2</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.3500948-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.AssetCollector</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:16.9797459-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>471ddbad71fe803469df8b2d1dd5efef</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.3686735-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.AssetReferenceCollection</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:17.0719809-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>da3d6946a944d3b47a5109a6774106ea</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.3871948-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.ClassReferenceCollection</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:17.1642735-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>4b6c1ad0f0148ef46b6ceec00a779a01</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.4032753-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.CollectionData</string>
-      <string>UnitySweeper.TypeDate</string>
-      <string>UnitySweeper.IReferenceCollection</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:17.2539128-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>a20fcd36afb97e94587dba0a27e9699b</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.4199808-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.FindUnusedAssetsWindow</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:17.3426485-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>b4d63326aea2b6748970eb4f3769de44</guid>
     <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
-    <timeStamp>2023-11-06T17:46:46.436685-05:00</timeStamp>
-    <typeFullName>
-      <string>UnitySweeper.ShaderReferenceCollection</string>
-    </typeFullName>
+    <timeStamp>2023-11-13T18:49:17.434185-05:00</timeStamp>
+    <typeFullName />
     <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
   <TypeDate>
     <guid>ac5903b776721d74786a2e43f00b949a</guid>
     <fileName>Assets/Samples/XR Hands/1.3.0/HandVisualizer/Scripts/HandProcessor.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.107848-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:19.3999925-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>2e9813c68d7d6f44282ace8bd2d1fd46</guid>
     <fileName>Assets/Samples/XR Hands/1.3.0/HandVisualizer/Scripts/HandVisualizer.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1088459-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:19.4946816-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>f9ac216f0eb04754b1d938aac6380b31</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Starter Assets/Scripts/ActionBasedControllerManager.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1816513-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:27.6866763-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>9b1e8c997df241c1a67045eeac79b41b</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Starter Assets/Scripts/DynamicMoveProvider.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1826486-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:27.7547869-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>6ef0e4723b64c884699a375196c13ac0</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Starter Assets/Scripts/GazeInputManager.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1836459-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:27.8128793-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>07b3638c2f5db5b479ff24c2859713d4</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Starter Assets/Scripts/XRPokeFollowAffordance.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1846432-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:27.9010169-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>0deb305527bf17143801528616ee4f73</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Hands Interaction Demo/Editor/Scripts/HandsInteractionSampleProjectValidation.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1128353-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:20.1266602-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>5a11e2b9ac9f4b058e4d5d1cdf05b499</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Hands Interaction Demo/Runtime/Scripts/HandsAndControllersManager.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.138766-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:22.693382-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>a83bc4aa48d0da648b49d0fd56690b25</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Hands Interaction Demo/Runtime/Scripts/MetaSystemGestureDetector.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.138766-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:22.7736419-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>54ce4268a4182384da360e6e2654d3a6</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Hands Interaction Demo/Runtime/Scripts/ObjectResetPlane.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1397632-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:22.8590246-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>dbac611a2982409ab5f5e604f53bcad0</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Hands Interaction Demo/Runtime/Scripts/PokeGestureDetector.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1407607-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:22.9407768-05:00</timeStamp>
     <typeFullName />
   </TypeDate>
   <TypeDate>
     <guid>ba6ff5e7c92519444bc2a7ca46558963</guid>
     <fileName>Assets/Samples/XR Interaction Toolkit/2.3.2/Starter Assets/Scripts/PokeStation/IncrementUIText.cs</fileName>
-    <timeStamp>2023-10-23T16:59:01.1846432-04:00</timeStamp>
+    <timeStamp>2023-11-13T18:49:27.9616095-05:00</timeStamp>
     <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>baf3b9ed486024e44a1fe6cb1f32bbc5</guid>
+    <fileName>Assets/ExtendClaws.cs</fileName>
+    <timeStamp>2023-12-01T13:23:55.744626-05:00</timeStamp>
+    <typeFullName>
+      <string>TriggerEvent</string>
+      <string>UnityEngine.XR.Interaction.Toolkit.ExtendClaws</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a885254411ada484ab4f816315c69b60</guid>
+    <fileName>Assets/HealthManager.cs</fileName>
+    <timeStamp>2023-11-13T18:47:25.9105334-05:00</timeStamp>
+    <typeFullName>
+      <string>HealthManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>333e0eb10c1565440a46579c15ad59ee</guid>
+    <fileName>Assets/Next.cs</fileName>
+    <timeStamp>2023-12-01T13:26:48.4705877-05:00</timeStamp>
+    <typeFullName>
+      <string>Next</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7e7954b3afdba044799272ef7bf5c206</guid>
+    <fileName>Assets/outside assets/Office building/scripts/Door.cs</fileName>
+    <timeStamp>2023-11-13T18:46:32.6013441-05:00</timeStamp>
+    <typeFullName>
+      <string>Door</string>
+      <string>Door+DoorGet</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>91c6af13e15ffb34080c24119b7f76d2</guid>
+    <fileName>Assets/outside assets/Office building/scripts/DoorAction.cs</fileName>
+    <timeStamp>2023-11-13T18:46:32.6018447-05:00</timeStamp>
+    <typeFullName>
+      <string>DoorAction</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c46416dfc1b96064ab91a5296bce1b6e</guid>
+    <fileName>Assets/outside assets/Office building/scripts/evelator_controll.cs</fileName>
+    <timeStamp>2023-11-13T18:46:32.6028447-05:00</timeStamp>
+    <typeFullName>
+      <string>evelator_controll</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>86a2df34564f23e44a2ff09161975011</guid>
+    <fileName>Assets/outside assets/Office building/scripts/Fix_elevator_fall.cs</fileName>
+    <timeStamp>2023-11-13T18:46:32.6023447-05:00</timeStamp>
+    <typeFullName>
+      <string>Fix_elevator_fall</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f705e10c05355f642bc5d2ea8c9a9b49</guid>
+    <fileName>Assets/outside assets/Office building/scripts/pass_on_parent.cs</fileName>
+    <timeStamp>2023-11-13T18:46:32.6028447-05:00</timeStamp>
+    <typeFullName>
+      <string>pass_on_parent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
   </TypeDate>
 </ArrayOfTypeDate>
